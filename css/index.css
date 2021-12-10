@@ -1,0 +1,309 @@
+@charset "utf-8";
+/*CSS Document */
+/*滿版*/
+html, body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/background-04.png); /*背景圖片*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family:Helvetica, Arial," sans-serif", Microsoft JhengHei;  /*字體*/
+}
+
+
+header{
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+/*---------------------全螢幕背景---------------------*/
+
+.content{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content img{
+	position: absolute;
+	top: 0; /*背景圖片變形的基準在左上方*/
+	left: 0;
+	overflow: hidden;
+}
+
+
+/*---------------------section---------------------*/
+section{
+	margin-top:2%;
+	position:static;	
+}
+
+.banner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	min-width:980px;
+	height:900px;
+	background:url(../images/runmoonman-03.png)no-repeat;
+	background-size:100%;
+}
+
+ .anitext{
+	position:absolute;
+	padding:10px;
+	left:2%;
+	bottom:55%;
+	color:#000;
+	background:rgba(0,0,0,0);
+	font-size:60px;
+	font-weight:bold;
+	opacity:0.9;
+	
+	-webkit-animation-name: ant; /* Safari 4.0 - 8.0 */
+	animation-name: ant;
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+	animation-duration: 6s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+	
+}
+
+@keyframes ant {
+    from   {bottom:100%; opacity:0; background:rgba(0,0,0,0);}
+    to  {bottom:55%; opacity:0.9; background:rgba(0,0,0,0);}
+}
+
+
+/*---------------------article01---------------------*/
+
+#article01{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 800px;
+	padding:5% 10%;
+	background:#2C2646;
+	background-size: cover;
+}
+
+#article01  h1{
+	text-align: center;
+	color:#FFFFFF;
+	padding: 20px;
+	margin: 0px 30%;
+	font-size: 27px;
+	border-bottom:solid 3px #EFDB42;
+}
+
+#article01  p{
+	text-align: center;
+	color: #fff;
+	font-size: 1em;
+}
+
+#article01  h6{
+	text-align: center;
+	color: #fff;
+	font-size: 0.5em;
+}
+
+#article01  img{
+	margin: 0 5%
+}
+
+#article01  img:hover{
+	cursor:pointer;
+	opacity:0.5;
+}
+
+/*---------------------article02---------------------*/
+
+#article02{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 800px;
+	padding:5% 10%;
+	background-size: cover;
+}
+
+#article02  h1{
+	text-align: center;
+	color:#2C2646;
+	padding: 20px;
+	margin: 0px 30%;
+	font-size: 27px;
+	border-bottom:solid 4px #E1895F;
+}
+
+#article02  p{
+	text-align: center;
+	color: #fff;
+	font-size: 1em;
+}
+
+#article02  h6{
+	text-align: center;
+	color: #fff;
+	font-size: 0.5em;
+}
+
+#article02  img{
+	margin: 0 5%
+}
+
+#article02  img:hover{
+	cursor:pointer;
+	opacity:0.5;
+}
+
+/*---------------------article03---------------------*/
+#article03{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 800px;
+	padding:5% 10%;
+	background:#0B1A25;
+	background-size: cover;
+}
+
+#article03  h1{
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 40px;
+	padding: 20px;
+	margin: 0px 30%;
+	border-bottom:solid 3px #EFDB42;	
+}
+
+#article03 h1::before{
+	content: url(../images/front-09.png);
+	width: 50%;
+}
+
+#article03  p{
+	margin-top:20px;
+	color: #fff;
+	font-size: 1em;
+}
+
+#article03 a{
+	display: block;
+	padding: 15px 15px;
+	text-decoration: none;
+	font-size: 12pt;
+	border-radius: 1%;
+	margin-top:20px;
+	margin-right: 20%;
+}
+
+#article03 a:hover{
+}
+
+
+.map img{
+	margin:0px auto;
+	text-align:center;
+	padding:50px 15px 15px 15px;
+
+}
+
+.map img:hover{
+	cursor:pointer;
+	opacity:0.5;
+}
+
+/*---------------------footer---------------------*/
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom:0px;
+	z-index: 99999999;
+	background: #2C2646;
+	padding: 25px;
+	display: inline;
+}
+
+
+.castnet{
+	margin-left: 30px; 
+	font-size: 10pt;
+	text-decoration: none;
+	color: rgba(236,198,0,1.00);
+	
+}
+
+.credit{
+	float: right; 
+	margin-right: 50px;
+	font-size: 10pt;
+	text-decoration: none;
+	color: rgba(236,198,0,1.00);
+	
+}
+
+
+/*===================rwd ==================*/
+
+*{
+	box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For phone */
+/*class中有col-的，都可以套用這個效果*/
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+	width: 100%;
+}
+
+/* For tablets */
+/*寬度介於768~1200時，加m*/
+@media only screen and (min-width: 768px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+/**/
+
+/* For desktop */
+/*寬度>=1200時*/
+@media only screen and (min-width: 1200px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}

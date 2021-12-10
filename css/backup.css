@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 抗議 */
+
+.demo{
+	clear: both;
+	width:70%;
+	padding:80px 0px;
+	margin:0 auto;
+}
+
+.demo h2{
+	padding:30px 0px;
+	line-height: 36px;
+}
+
+.demo p{
+	font-size:18px;
+	padding:0px 0px 80px 0px;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header{
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	
+	}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../image/); /*背景圖片*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family:Helvetica, Arial," sans-serif", Microsoft JhengHei;  /*字體*/
+}
+
+
+/*---------------------article01---------------------*/
+#article01{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 800px;
+	margin-top:4.5%;
+	padding:5% 10%;
+	background:rgba(255,255,255,0.8);
+	background-size: cover;
+	
+}
+
+#article01  h1{
+	text-align: center;
+	color:#2C2646;
+	padding: 30px;
+	margin: 0px 20%;
+	font-size: 60px;
+	border-bottom:solid 5px #E1895F;
+}
+
+
+#article01 h1::before{
+	content: url(../images/front-09.png);
+	width: 50%;
+}
+
+.box{
+	display: inline-block;/*把圖、文字全部包在一起當作群組操作*/
+	box-sizing: border-box;
+	float: left;
+	background:rgba(255,255,255,0.7);
+	margin-top: 1%;
+	overflow: hidden;
+	z-index: 10;
+	border:solid 3px #0B1A25;
+	border-radius: 1%;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box img{
+	width: 100%
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{
+	-ms-transform:scale(1,1);/*IE 9*/
+	-webkit-transform:scale(1,1);/*safari*/
+	transform: scale(1,1);/*Standard syntax*/
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+	
+	transition-timing-function: ease-in-out;/*動態效果，可以選別ㄉ*/
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+	transform:scale(1.2,1.2);
+}
+
+.box h4{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #E1895F;
+}
+
+.box p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #000;
+}
+
+
+/*---------------------article03---------------------*/
+#article03{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 800px;
+	padding:5% 10%;
+	background:#0B1A25;
+	background-size: cover;
+}
+
+#article03  h1{
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 40px;
+	padding: 20px;
+	margin: 0px 30%;
+	border-bottom:solid 3px #EFDB42;
+	
+}
+
+#article03 h1::before{
+	content: url(../images/front-09.png);
+	width: 50%;
+}
+
+#article03  p{
+	margin-top:20px;
+	color: #fff;
+	font-size: 1em;
+}
+
+#article03 a{
+	display: block;
+	padding: 15px 15px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12pt;
+	border:solid 1px rgba(255,255,255,1.00);
+	border-radius: 1%;
+	background:rgba(255,255,255,0.20);
+	margin-top:20px;
+	margin-right: 20%;
+}
+
+#article03 a:hover{
+	border:solid 1px rgba(236,198,0,1.00);
+	
+}
+
+
+/*===============rwd details===============*/
+
+*{
+box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For phone */
+/*class中有col-的，都可以套用這個效果*/
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+	width: 100%;
+}
+
+/* For tablets */
+/*寬度介於768~1200時，加m*/
+@media only screen and (min-width: 768px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+/**/
+
+/* For desktop */
+/*寬度>=1200時*/
+@media only screen and (min-width: 1200px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}

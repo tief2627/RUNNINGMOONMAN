@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0;">
+<title>月老地圖</title>
+<link href="css/map.css" rel="stylesheet" type="text/css">
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+<!-- Add fancyBox -->
+<!--<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>-->
+<!--<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>-->
+<!-- Add javascript -->
+<script type="text/javascript" src="js/map.js"></script>
+	
+</head>
+
+<body>
+	<div class="anitext3">Scroll down→</div>
+	
+		
+	
+	</div>
+	<header>
+	<nav>
+			<ul>
+				<li><a href="index.html">回首頁</a></li>
+				<li><a href="why.html">他是誰</a></li>
+				<li><a href="know.html">月老知道</a></li>
+			</ul>
+	</nav>	
+	</header>
+	<div class="banner" id="banner">
+		<img src="images/map2-10.png" width="100%"/>
+		<a id='north' class="fancybox" rel="gallery1" href="images/temple-07.png"><img src="images/point-15.png"/></a>
+		<a id="middle" class="fancybox" rel="gallery2" href="images/temple-08.png"><img src="images/point-16.png"/></a> 
+		<a id='south' class="fancybox" rel="gallery3" href="images/temple-09.png"><img src="images/point-17.png"/></a> 
+    </div>
+	
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~article01~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<div class="end">
+	<div class="logo"><img src="images/logo2-07.png"></div>
+    
+    資料來源：
+    <a href="https://www.facebook.com/twnihao/photos/a.1629241514039634/1604363243194128/?type=3&__xts__%5B0%5D=68.ARCUrLj3ySwRP_gRZ_6WyeLsujSu6OX9E36EyWWlOjM8dWw83fOVyELL4Bl-NlbfgLStAvmPBll1esXXN5c9jQn9yMWv2FDyc2DqO0qAkKbc6xWWAy2hEEb6iXHsNaq9IHnmWPtxnzT7zVfGKs-QWy048ruZ7kCmrK-V1EhWQgC3hKdMJQuYgq2jF4jLkEo5_mJvuJNf74vInksK6K5AAgI9bkIgyo8qdVZgj73SNGTNPRyw00M09p6SQ4QiA-TTgvDrOM9LQGFib6ST9F3qBjpbuk7YjtSBwNyI40Q3H3DqNGXJSwmFcF9NU5GwcF6axfeBSUtWBJfnsd4T9HOtKg037IIS&__tn__=-R" target="_blank" class="hey">月老環島</a>、
+    <a href="https://www.shopback.com.tw/blog/tainan-chinese-cupid-travel" class="hey" target="_blank">台南輕旅行</a>、
+    <a href="https://0800happy.com/archives/5143/" target="_blank" class="hey">台中樂成宮</a>、
+    <a href="http://www.tpecitygod.org/matchmaker02.html" target="_blank" class="hey">台北霞海城隍廟</a>
+    <br>
+    &copy; Chien Yu 2019
+    
+</div>
+	
+	<script>
+	
+		$(document).ready(function(){
+			let banner_w = document.getElementById('banner').offsetWidth;
+			let banner_h = document.getElementById('banner').offsetHeight;
+			console.log(banner_w, banner_h);
+			let north = document.getElementById('north');
+			let middle = document.getElementById('middle');
+			let south = document.getElementById('south');
+			north.style.left = `${banner_w / 100.0 * 10}px`;
+			north.style.top = `${banner_h / 100.0 * 35}px`;
+			middle.style.left = `${banner_w / 100.0 * 32}px`;
+			middle.style.top = `${banner_h / 100.0 * 57}px`;
+			south.style.left = `${banner_w / 100.0 * 55}px`;
+			south.style.top = `${banner_h / 100.0 * 60}px`;
+			console.log(north);
+		});
+	</script>
+	
+</body>
+</html>

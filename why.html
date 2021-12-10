@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content=" width=device-width; initial-scale=1.0;">
+<title>為什麼月老要跑起來</title>
+<link href="css/why.css" rel="stylesheet" type="text/css">
+<!--js-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript" src="js/why.js"></script>
+
+</head>
+	<header>
+			<h1><img src="images/logo-07.png" width="10%"></h1>
+			<div class="menu"></div>
+	</header>
+	<nav>
+			<ul>
+				<li><a href="index.html">回首頁</a></li>
+				<li><a href="know.html">小百科</a></li>
+				<li><a href="map.html">月老地圖</a></li>
+			</ul>
+	</nav>	
+<!--banner-->
+<main>
+	<section>
+      <!-- swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+			 <div class="swiper-slide"><a href="#"><img src="images/swipe1-01.png"/></a></div>
+			 <div class="swiper-slide"><a href="#"><img src="images/swipe-02.png"/></a></div>
+			 <div class="swiper-slide"><a href="#"><img src="images/swipe-03.png"/></a></div>
+			 <div class="swiper-slide"><a href="#"><img src="images/swipe-05.png"/></a></div>
+			 <div class="swiper-slide"><a href="#"><img src="images/swipe-04.png"/></a></div>
+			<div class="swiper-slide"><a href="#"><img src="images/swipe-06.png"/></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+</main>
+	
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      speed:1000,
+	spaceBetween: 1000,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+ </script>
+	
+	
+<body>
+	<article id="article01">
+	<div class="ar"><img src="images/arrow-12.png">
+	</div>
+		<br>
+		<br>
+		<h1>共同創辦人</h1>
+		<p>
+		<img src="images/founder-16.png" width="45%">
+		<br>
+		<br>
+		</p>
+		
+		<br><br><br>
+		<h1>聯繫方式</h1>
+		<p>
+		月老他看不到，他聽不到<br>
+		他忙得不能為你祈禱<br>
+		我猜他早已經把我們忘掉<br>
+		你自己幸福自己去找<br>
+		<br><br>
+		
+		<a href="https://www.instagram.com/tief2627.cts04/" id="one" target="_blank"><img src="images/icon-17.png" width="5%"></a>
+		<a href="https://www.facebook.com/%E8%B7%91%E8%B7%91%E6%9C%88%E8%80%81-2236000593288177/?modal=admin_todo_tour" id="two" target="_blank"><img src="images/icon-18.png" width="5%"></a>
+		
+		</p>
+		
+	<div class="end">	
+	  &copy; Designed by Chien Yu, 2019
+	</div>
+	</div>
+</body>
+
+</html>
